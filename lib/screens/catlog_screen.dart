@@ -21,7 +21,7 @@ class CatlogScreen extends StatelessWidget {
             CatlogProduct(),
             ElevatedButton.icon(
                 icon: const Icon(Icons.shopping_cart),
-                onPressed: () => Get.to(CartScreen()),
+                onPressed: () => Get.to(() => CartScreen()),
                 label: const Text('Go to Cart'))
           ],
         ),

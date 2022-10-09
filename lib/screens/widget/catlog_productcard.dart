@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:fresh_fruits/controllers/cart_controller.dart';
+import 'package:fresh_fruits/controllers/product_controller.dart';
 import 'package:get/get.dart';
-
-import '../../models/product_model.dart';
 
 class CatlogProductCard extends StatelessWidget {
   final int index;
   final cartController = Get.put(CartController());
-
+  final ProductController productController = Get.find();
   CatlogProductCard({super.key, required this.index});
 
   @override
@@ -20,7 +18,8 @@ class CatlogProductCard extends StatelessWidget {
         children: <Widget>[
           CircleAvatar(
             radius: 40,
-            backgroundImage: NetworkImage(Product.products[index].imageUrl),
+            backgroundImage:
+                NetworkImage(productController.products[index].imageUrl),
             // NetworkImage(productController.products[index].imageUrl),
           ),
           const SizedBox(
@@ -28,17 +27,17 @@ class CatlogProductCard extends StatelessWidget {
           ),
           Expanded(
               child: Text(
-            Product.products[index].name,
+            productController.products[index].name,
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           )),
           Expanded(
               child: Text(
-            '${Product.products[index].price}',
+            '${productController.products[index].price}',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           )),
           IconButton(
               onPressed: () {
-                cartController.addProducts(Product.products[index]);
+                cartController.addProducts(productController.products[index]);
               },
               icon: const Icon(Icons.add_circle))
         ],

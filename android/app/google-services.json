@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281309172415",
+    "project_id": "fresh-fruit-6726a",
+    "storage_bucket": "fresh-fruit-6726a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281309172415:android:1283eb78977e6a0d41ac0a",
+        "android_client_info": {
+          "package_name": "com.example.fresh_fruits"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281309172415-7d605cuf2so59uuou48l32qmnaplp3d4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCePBCpWf4GtLiqbQAYYTHzl-TgYFrMHhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281309172415-7d605cuf2so59uuou48l32qmnaplp3d4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
