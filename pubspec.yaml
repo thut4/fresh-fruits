@@ -36,6 +36,8 @@ dependencies:
   get: any
   cloud_firestore: any
   firebase_core: any
+  firebase_auth: ^3.11.2
+  google_sign_in: ^5.4.2
 
 dev_dependencies:
   flutter_test:
