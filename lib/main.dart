@@ -1,11 +1,16 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:fresh_fruits/screens/catlog_screen.dart';
+import 'package:fresh_fruits/screens/auth/register.dart';
 import 'package:get/get.dart';
+
+import 'constants/firebase_constant.dart';
+import 'controllers/auth_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
+  firebaseIntialization.then((value) {
+    Get.put(AuthController());
+  });
   runApp(const MyApp());
 }
 
@@ -20,7 +25,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CatlogScreen(),
+      // home: CatlogScreen(),
+      home: const Register(),
     );
   }
 }

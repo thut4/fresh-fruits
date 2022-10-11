@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:fresh_fruits/controllers/product_controller.dart';
-import 'package:fresh_fruits/models/product_model.dart';
 import 'package:get/get.dart';
 
 import 'catlog_productcard.dart';

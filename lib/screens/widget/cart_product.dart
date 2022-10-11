@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fresh_fruits/controllers/cart_controller.dart';
-import 'package:fresh_fruits/models/product_model.dart';
 import 'package:get/get.dart';
 
 import 'cart_productcard.dart';
 
 class CartProduct extends StatelessWidget {
   final CartController controller = Get.find();
+  CartProduct({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
